@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<form action="/action_page.php">
+<form action="/action_page.php" oninput = "x.value=parseInt(a.value)+parseInt(b.value)">
 
 	<fieldset>
     <legend>Legend</legend>
@@ -37,11 +37,12 @@
 
 	<br><br>
   
-  <input type="submit" value="Submit">
+ 
 
 
 	<br><br>
 
+ Browsers:
    <input list="browsers" name="browser">
 
    <datalist id="browsers">
@@ -51,6 +52,41 @@
 	<option value="FireFox">
 	
   </datalist>
+
+	<br><br>
+
+
+
+	<!-- Keygen -->
+
+	UserName:<input type="text" name="user">
+
+	<br><br>
+
+	Encryption: <keygen name="security">
+
+	<br><br>
+
+ <input type="submit" value="Submit">
+
+
+	<br><br>
+
+	<!-- Keygen -->
+
+	0
+	<input type="range" id = "a" name = "a" value="50">
+
+	100 + 
+
+	<input type="number" id="b" name= "b" value="50">
+
+	=
+
+	<output name="x" for = "a b"></output>
+
+	<br><br>
+
   
   </fieldset>
 </form> 
