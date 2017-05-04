@@ -2,12 +2,12 @@
 <html>
 <body>
 
-<form action="/action_page.php" oninput = "x.value=parseInt(a.value)+parseInt(b.value)">
+<form action="/action_page.php" id="form1" autocomplete="off"> <!-- For nonvalidatio use non validate // for autocomplete of use autocomplete off by default it is on most browser -->
 
 	<fieldset>
     <legend>Legend</legend>
   First name:<br>
-  <input type="text" value="Mickey">
+  <input type="text" name="fname">
   <br>
   Last name:<br>
   <input type="text" name="lastname" value="Mouse">
@@ -161,10 +161,47 @@
   Range:
   <input type="range" name="quantity" min="0" max="100" step="30" value="30">
 
+  <br><br>
+
+  Url:
+  <input type="url" name="homepage">
+<br><br>
+  Week:
+
+  <input type="week" name="year_weel">
+
+  <br><br>
+
+  ReadOnly:<br>
+
+  First name:<br>
+<input type="text" name="firstname" value ="Nuruzzaman" readonly>
+<br>
+
+ <br><br>
+
+  Disable:<br>
+
+  First name:<br>
+<input type="text" name="firstname" value ="Nuruzzaman" disabled>
+<br>
+
+  <br><br>
+
+  Maxlength:<br>
+
+  First name:<br>
+<input type="text" name="firstname" value ="Nuruzzaman" maxlength="11">
+<br>
+
    <input type="submit" value="Submit">
+
+   <input type="submit" formnovalidate value="Submit without validation">
 
   </fieldset>
 </form> 
+
+LastName: <input type="text" name="lname" form="form1"> <!-- This is still the part of Form1 -->
 
 </body>
 </html>
