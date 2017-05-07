@@ -2,7 +2,11 @@
 	<style>
 table, th, td {
     border: 1px solid black;
-    border-collapse: collapse;
+    padding: 5px;
+}
+
+table{
+	border-spacing: 5px;
 }
 
 th, td {
@@ -16,32 +20,87 @@ tr{
 	text-align: center;
 }
 
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+
+table#t01 td:nth-child(odd) {
+    background-color: #eee;
+}
+
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+
 </style>
 </head>
 
 <body>
 	
 <table style="width:100%">
+
+	<caption>Personal Information</caption>
   <tr>
     <th>Firstname</th>
     <th>Lastname</th> 
     <th>Age</th>
+    <th colspan="2">Mobile</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <th rowspan="2">Nuruzzaman</th>
+    <td>Nabwab</td>
+    <td>22</td>
+    <td>017********</td>
+    <td>0175********</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td>Khan</td>
+    
+
+  </tr>
+  <tr>
+    <td>Hossain</td>
+    <td>Nayon</td>
+    <td>20</td>
   </tr>
   <tr>
     <td>John</td>
     <td>Doe</td>
     <td>80</td>
   </tr>
+
+  <table id="t01">
+  <tr>
+     <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th colspan="2">Mobile</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Nuruzzaman</td>
+    <td>Nabwab</td>
+    <td>22</td>
+    <td>017********</td>
+    <td>0175********</td>
+  </tr>
+  <tr>
+    <td>Khan</td>
+    
+
+  </tr>
+  <tr>
+    <td>Hossain</td>
+    <td>Nayon</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+
 </table>
 
 </body>
